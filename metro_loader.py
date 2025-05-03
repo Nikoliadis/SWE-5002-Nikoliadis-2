@@ -1,4 +1,5 @@
 import csv
+import random
 from graph_data import GraphData
 
 def load_graph_from_csv(filepath):
@@ -10,7 +11,7 @@ def load_graph_from_csv(filepath):
             from_station = row['From']
             to_station = row['To']
             line = row['Line']
-            time = int(row['Time'])
+            time = random.randint(2, 8)
 
             graph.add_connections(from_station, to_station, line, time)
 
