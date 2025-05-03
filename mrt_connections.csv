@@ -1,0 +1,16 @@
+From,To,Line,Time
+Dhoby Ghaut,City Hall,North South Line,3
+City Hall,Raffles Place,North South Line,2
+Raffles Place,Marina Bay,North South Line,4
+Marina Bay,Bayfront,Downtown Line,3
+Dhoby Ghaut,Bras Basah,Circle Line,5
+Bras Basah,Esplanade,Circle Line,2
+Bras Basah,Bugis,Downtown Line,4
+Esplanade,Bugis,Downtown Line,3
+Marina Bay,Bayfront,Downtown Line,2
+Bayfront,Promenade,Circle Line,3
+Bayfront,Downtown,Downtown Line,2
+Promenade,Bugis,Downtown Line,2
+Promenade,Esplanade,Circle Line,3
+Esplanade,City Hall,East West Line,3
+City Hall,Bugis,East West Line,2
