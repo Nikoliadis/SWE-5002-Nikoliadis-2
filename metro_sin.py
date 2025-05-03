@@ -14,5 +14,24 @@ def main():
         for conn in graph.get_connections(station):
             print(f"  → {conn[0]} via {conn[1]} line ({conn[2]} min)")
 
+    path = graph.shortest_path("Dhoby Ghaut", "Marina Bay")
+
+    if path:
+        print("\nShortest path:")
+        print(" → ".join(path))
+    else:
+        print("No path found.")
+
+    path, total_time = graph.fastest_path("Dhoby Ghaut", "Marina Bay")
+
+    
+    if path:
+        print("\nFastest path:")
+        print(" → ".join(path))
+        print(f"Total travel time: {total_time} minutes")
+    else:
+        print("No path found.")
+
+
 if __name__ == "__main__":
     main()
