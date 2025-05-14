@@ -1,0 +1,159 @@
+station_code,station_name,line
+NE6,Dhoby Ghaut,NE
+EW17,Tiong Bahru,EW
+EW13,City Hall,EW
+PE2,Meridian Lrt Station,PE
+BP9,Bangkit Lrt Station,BP
+BP3,Keat Hong Lrt Station,BP
+EW14,Raffles Place,EW
+NE10,Potong Pasir,NE
+NE12,Serangoon,NE
+EW10,Kallang,EW
+TE2,Woodlands,TE
+NE15,Buangkok,NE
+EW25,Chinese Garden,EW
+EW9,Aljunied,EW
+CC23,One-North,CC
+CC1,Dhoby Ghaut,CC
+BP7,Petir Lrt Station,BP
+EW33,Tuas Link,EW
+DT15,Promenade,DT
+DT25,Mattar,DT
+DT19,Chinatown,DT
+EW2,Tampines,EW
+NS28,Marina South Pier,NS
+CC27,Labrador Park,CC
+CC3,Esplanade,CC
+NS1,Jurong East,NS
+TE11,Stevens,TE
+EW15,Tanjong Pagar,EW
+BP6,Bukit Panjang Lrt Station,BP
+TE8,Upper Thomson,TE
+EW6,Kembangan,EW
+TE5,Lentor,TE
+NE1,Harbourfront,NE
+NE7,Little India,NE
+DT9,Botanic Gardens,DT
+DT21,Bencoolen,DT
+DT2,Cashew,DT
+BP2,South View Lrt Station,BP
+EW4,Tanah Merah,EW
+NS12,Canberra,NS
+NE13,Kovan,NE
+NS10,Admiralty,NS
+CC24,Kent Ridge,CC
+EW30,Gul Circle,EW
+EW3,Simei,EW
+NS27,Marina Bay,NS
+DT1,Bukit Panjang,DT
+DT34,Upper Changi,DT
+SW6,Layar Lrt Station,SW
+EW7,Eunos,EW
+DT4,Hume,DT
+BP4,Teck Whye Lrt Station,BP
+PE1,Cove Lrt Station,PE
+DT20,Fort Canning,DT
+CC26,Pasir Panjang,CC
+SW2,Farmway Lrt Station,SW
+DT22,Jalan Besar,DT
+DT16,Bayfront,DT
+TE4,Springleaf,TE
+CC12,Bartley,CC
+CC9,Paya Lebar,CC
+CC5,Nicoll Highway,CC
+NS5,Yew Tee,NS
+NS15,Yio Chu Kang,NS
+NE9,Boon Keng,NE
+CC14,Lorong Chuan,CC
+SW7,Tongkang Lrt Station,SW
+EW20,Commonwealth,EW
+NE16,Sengkang,NE
+DT24,Geylang Bahru,DT
+EW11,Lavender,EW
+DT6,King Albert Park,DT
+TE6,Mayflower,TE
+CC15,Bishan,CC
+SE4,Kangkar Lrt Station,SE
+DT35,Expo,DT
+EW22,Dover,EW
+NS17,Bishan,NS
+DT7,Sixth Avenue,DT
+EW1,Pasir Ris,EW
+NE8,Farrer Park,NE
+TE1,Woodlands North,TE
+TE7,Bright Hill,TE
+DT18,Telok Ayer,DT
+DT27,Ubi,DT
+CC4,Promenade,CC
+CC10,Macpherson,CC
+NS3,Bukit Gombak,NS
+EW28,Pioneer,EW
+NS4,Choa Chu Kang,NS
+BP1,Choa Chu Kang Lrt Station,BP
+BP5,Phoenix Lrt Station,BP
+DT17,Downtown,DT
+NE11,Woodleigh,NE
+EW27,Boon Lay,EW
+BP10,Fajar Lrt Station,BP
+NS2,Bukit Batok,NS
+EW5,Bedok,EW
+CC7,Mountbatten,CC
+DT13,Rochor,DT
+NS13,Yishun,NS
+EW8,Paya Lebar,EW
+PE3,Coral Edge Lrt Station,PE
+DT31,Tampines West,DT
+SW4,Thanggam Lrt Station,SW
+NS9,Woodlands,NS
+DT14,Bugis,DT
+NS20,Novena,NS
+EW26,Lakeside,EW
+SW3,Kupang Lrt Station,SW
+EW32,Tuas West Road,EW
+PE4,Riviera Lrt Station,PE
+EW19,Queenstown,EW
+DT10,Stevens,DT
+PE7,Damai Lrt Station,PE
+NS22,Orchard,NS
+NS19,Toa Payoh,NS
+CC18,Bukit Brown,CC
+EW23,Clementi,EW
+PE5,Kadaloor Lrt Station,PE
+NS26,Raffles Place,NS
+CC6,Stadium,CC
+SE1,Compassvale Lrt Station,SE
+BP13,Senja Lrt Station,BP
+DT12,Little India,DT
+SE3,Bakau Lrt Station,SE
+NS21,Newton,NS
+NS14,Khatib,NS
+EW31,Tuas Crescent,EW
+CE2,Marina Bay,CE
+NE14,Hougang,NE
+SE2,Rumbia Lrt Station,SE
+NS8,Marsiling,NS
+NS25,City Hall,NS
+CE1,Bayfront,CE
+DT33,Tampines East,DT
+CC28,Telok Blangah,CC
+STC,Sengkang Lrt Station,STC
+NS7,Kranji,NS
+CC8,Dakota,CC
+DT30,Bedok Reservoir,DT
+NS23,Somerset,NS
+CC13,Serangoon,CC
+PW1,Sam Kee Lrt Station,PW
+PW7,Soo Teck Lrt Station,PW
+PTC,Punggol Lrt Station,PTC
+CC2,Bras Basah,CC
+PW4,Samudera Lrt Station,PW
+CC11,Tai Seng,CC
+NS24,Dhoby Ghaut,NS
+PW2,Teck Lee Lrt Station,PW
+CG2,Changi Airport,CG
+PW5,Nibong Lrt Station,PW
+PW3,Punggol Point Lrt Station,PW
+CG1,Expo,CG
+CC21,Holland Village,CC
+CC17,Caldecott,CC
+TE9,Caldecott,TE
