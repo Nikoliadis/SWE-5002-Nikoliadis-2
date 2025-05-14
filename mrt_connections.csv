@@ -1,11 +1,100 @@
 From,To,Line,Time
-Dhoby Ghaut,City Hall,North South Line,3
-City Hall,Raffles Place,North South Line,2
-Raffles Place,Marina Bay,North South Line,4
+Jurong East,Bukit Batok,North South Line,5
+Bukit Batok,Bukit Gombak,North South Line,4
+Bukit Gombak,Choa Chu Kang,North South Line,8
+Choa Chu Kang,Yew Tee,North South Line,2
+Yew Tee,Kranji,North South Line,2
+Kranji,Marsiling,North South Line,8
+Marsiling,Woodlands,North South Line,2
+Woodlands,Admiralty,North South Line,2
+Admiralty,Sembawang,North South Line,4
+Sembawang,Canberra,North South Line,8
+Canberra,Yishun,North South Line,7
+Yishun,Khatib,North South Line,7
+Khatib,Yio Chu Kang,North South Line,7
+Yio Chu Kang,Ang Mo Kio,North South Line,7
+Ang Mo Kio,Bishan,North South Line,4
+Bishan,Braddell,North South Line,8
+Braddell,Toa Payoh,North South Line,7
+Toa Payoh,Novena,North South Line,7
+Novena,Newton,North South Line,2
+Newton,Orchard,North South Line,5
+Orchard,Somerset,North South Line,8
+Somerset,Dhoby Ghaut,North South Line,5
+Dhoby Ghaut,City Hall,North South Line,4
+City Hall,Raffles Place,North South Line,5
+Raffles Place,Marina Bay,North South Line,2
+Marina Bay,Marina South Pier,North South Line,2
+Pasir Ris,Tampines,East West Line,8
+Tampines,Simei,East West Line,8
+Simei,Tanah Merah,East West Line,2
+Tanah Merah,Bedok,East West Line,8
+Bedok,Kembangan,East West Line,8
+Kembangan,Eunos,East West Line,4
+Eunos,Paya Lebar,East West Line,5
+Paya Lebar,Aljunied,East West Line,8
+Aljunied,Kallang,East West Line,5
+Kallang,Lavender,East West Line,4
+Lavender,Bugis,East West Line,5
+Bugis,City Hall,East West Line,7
+City Hall,Raffles Place,East West Line,4
+Raffles Place,Tanjong Pagar,East West Line,2
+Tanjong Pagar,Outram Park,East West Line,3
+Outram Park,Tiong Bahru,East West Line,8
+Tiong Bahru,Redhill,East West Line,8
+Redhill,Queenstown,East West Line,7
+Queenstown,Commonwealth,East West Line,2
+Commonwealth,Buona Vista,East West Line,7
+Buona Vista,Dover,East West Line,8
+Dover,Clementi,East West Line,4
+Clementi,Jurong East,East West Line,6
+Jurong East,Chinese Garden,East West Line,4
+Chinese Garden,Lakeside,East West Line,8
+Lakeside,Boon Lay,East West Line,3
+Boon Lay,Pioneer,East West Line,2
+Pioneer,Joo Koon,East West Line,8
+Bukit Panjang,Cashew,Downtown Line,2
+Cashew,Hillview,Downtown Line,2
+Hillview,Beauty World,Downtown Line,5
+Beauty World,King Albert Park,Downtown Line,8
+King Albert Park,Sixth Avenue,Downtown Line,8
+Sixth Avenue,Tan Kah Kee,Downtown Line,8
+Tan Kah Kee,Botanic Gardens,Downtown Line,8
+Botanic Gardens,Stevens,Downtown Line,3
+Stevens,Newton,Downtown Line,3
+Newton,Little India,Downtown Line,5
+Little India,Rochor,Downtown Line,4
+Rochor,Bugis,Downtown Line,8
+Bugis,Promenade,Downtown Line,2
+Promenade,Bayfront,Downtown Line,4
+Bayfront,Downtown,Downtown Line,2
+Downtown,Telok Ayer,Downtown Line,7
+Telok Ayer,Chinatown,Downtown Line,6
+Chinatown,Fort Canning,Downtown Line,3
 Dhoby Ghaut,Bras Basah,Circle Line,5
-Bras Basah,Esplanade,Circle Line,2
-Esplanade,Promenade,Circle Line,3
-Promenade,Bayfront,Downtown Line,2
-Bayfront,Marina Bay,Downtown Line,4
-Bayfront,Downtown,Downtown Line,3
-Downtown,Bugis,Downtown Line,2
+Bras Basah,Esplanade,Circle Line,5
+Esplanade,Promenade,Circle Line,8
+Promenade,Nicoll Highway,Circle Line,4
+Nicoll Highway,Stadium,Circle Line,2
+Stadium,Mountbatten,Circle Line,5
+Mountbatten,Dakota,Circle Line,3
+Dakota,Paya Lebar,Circle Line,3
+Paya Lebar,Macpherson,Circle Line,4
+Macpherson,Tai Seng,Circle Line,7
+Tai Seng,Bartley,Circle Line,4
+Bartley,Serangoon,Circle Line,7
+Serangoon,Lorong Chuan,Circle Line,7
+Lorong Chuan,Bishan,Circle Line,4
+Bishan,Marymount,Circle Line,4
+Marymount,Caldecott,Circle Line,5
+Caldecott,Botanic Gardens,Circle Line,5
+Botanic Gardens,Farrer Road,Circle Line,2
+Farrer Road,Holland Village,Circle Line,3
+Holland Village,Buona Vista,Circle Line,3
+Buona Vista,one-north,Circle Line,3
+one-north,Kent Ridge,Circle Line,4
+Kent Ridge,Haw Par Villa,Circle Line,3
+Haw Par Villa,Pasir Panjang,Circle Line,5
+Pasir Panjang,Labrador Park,Circle Line,7
+Labrador Park,Telok Blangah,Circle Line,4
+Telok Blangah,Harbourfront,Circle Line,6

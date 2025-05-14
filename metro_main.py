@@ -1,5 +1,7 @@
 import csv
 from metro_loader import load_graph_from_csv
+from metro_graph import Graph
+
 
 class Edge:
     def __init__(self, connection, weight):
@@ -57,7 +59,6 @@ class Graph:
                     v.parent = u
         return True
 
-
 def display_csv(filepath):
     print("\nMRT Connections from CSV:")
     with open(filepath, newline='', encoding='utf-8') as csvfile:
@@ -72,8 +73,16 @@ def display_stations(filepath):
         for row in reader:
             print(" | ".join(row))
 
+def reconstruct_path(end_vertex):
+    path = []
+    current = end_vertex
+    while current:
+        path.append(current.name)
+        current = current.parent
+    return list(reversed(path))
+
 def main():
-    graph = load_graph_from_csv("mrt_connections.csv")
+    graph, name_to_code = load_graph_from_csv("mrt_connections.csv", "stations.csv")
 
     while True:
         print("\nSingapore MRT Route Finder")
@@ -85,25 +94,27 @@ def main():
 
         choice = input("\nEnter choice: ")
 
-        if choice == "1":
-            start = input("Enter start station name: ")
-            end = input("Enter destination station name: ")
-            path = graph.shortest_path(start, end)
-            if path:
-                print("\nShortest path:")
-                print(" → ".join(path))
-            else:
+        if choice == "1" or choice == "2":
+            start_name = input("Enter start station name: ").strip().lower()
+            end_name = input("Enter destination station name: ").strip().lower()
+
+            start_code = name_to_code.get(start_name)
+            end_code = name_to_code.get(end_name)
+
+            if not start_code or not end_code:
+                print("Station name not found. Please check and try again.")
+                continue
+
+            graph.dijkstra(start_code)
+            end_vertex = graph.vertices[end_code]
+            if end_vertex.distance == float("inf"):
                 print("No path found.")
-        elif choice == "2":
-            start = input("Enter start station name: ")
-            end = input("Enter destination station name: ")
-            path, time = graph.fastest_path(start, end)
-            if path:
-                print("\nFastest path:")
-                print(" → ".join(path))
-                print(f"Total travel time: {time} minutes")
             else:
-                print("No path found.")
+                path = reconstruct_path(end_vertex)
+                print("\nShortest path:" if choice == "1" else "\nFastest path:")
+                print(" → ".join(path))
+                print(f"Total travel time: {end_vertex.distance} minutes")
+
         elif choice == "3":
             display_csv("mrt_connections.csv")
         elif choice == "4":
