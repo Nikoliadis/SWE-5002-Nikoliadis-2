@@ -2,14 +2,14 @@ import csv
 from metro_loader import load_graph_from_csv
 
 def display_csv(filepath):
-    print("\n📄 MRT Connections:")
+    print("\nMRT Connections:")
     with open(filepath, newline='', encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
             print(" | ".join(row))
 
 def display_stations(filepath):
-    print("\n📍 MRT Station List:")
+    print("\nMRT Station List:")
     with open(filepath, newline='', encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile)
         headers = next(reader)  # Skip header
