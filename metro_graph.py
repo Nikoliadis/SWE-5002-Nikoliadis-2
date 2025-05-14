@@ -1,3 +1,6 @@
+import csv
+from collections import defaultdict
+
 class Edge:
     def __init__(self, connection, weight):
         self.connection = connection
@@ -53,3 +56,41 @@ class Graph:
                     v.distance = u.distance + edge.weight
                     v.parent = u
         return True
+
+def load_graph_from_csv(filepath_connections, filepath_stations):
+    graph = Graph()
+    from collections import defaultdict
+    name_to_code = defaultdict(list)
+    stations_by_name = defaultdict(list)
+
+    with open(filepath_stations, newline='', encoding='utf-8') as stations_file:
+        reader = csv.DictReader(stations_file)
+        for row in reader:
+            code = row["station_code"].strip()
+            name = row["station_name"].strip()
+            line = row["line"].strip()
+
+            graph.add_station(code, name, line)
+            name_to_code[name.lower()].append(code)
+            name_to_code[code.lower()].append(code)
+            stations_by_name[name].append(code)
+
+    with open(filepath_connections, newline='', encoding='utf-8') as conn_file:
+        reader = csv.DictReader(conn_file)
+        for row in reader:
+            from_name = row["From"].strip()
+            to_name = row["To"].strip()
+            time = int(row["Time"].strip())
+
+            from_code = name_to_code.get(from_name.lower())
+            to_code = name_to_code.get(to_name.lower())
+
+            if from_code and to_code:
+                graph.connect(from_code, to_code, time)
+
+    for same_name_codes in stations_by_name.values():
+        for i in range(len(same_name_codes)):
+            for j in range(i + 1, len(same_name_codes)):
+                graph.connect(same_name_codes[i], same_name_codes[j], 5)
+
+    return graph, name_to_code

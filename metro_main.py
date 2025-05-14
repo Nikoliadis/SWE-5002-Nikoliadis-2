@@ -2,7 +2,6 @@ import csv
 from metro_loader import load_graph_from_csv
 from metro_graph import Graph
 
-
 class Edge:
     def __init__(self, connection, weight):
         self.connection = connection
@@ -98,22 +97,32 @@ def main():
             start_name = input("Enter start station name: ").strip().lower()
             end_name = input("Enter destination station name: ").strip().lower()
 
-            start_code = name_to_code.get(start_name)
-            end_code = name_to_code.get(end_name)
+            start_options = name_to_code.get(start_name, [])
+            end_options = name_to_code.get(end_name, [])
 
-            if not start_code or not end_code:
+
+            if not start_options or not end_options:
                 print("Station name not found. Please check and try again.")
                 continue
 
-            graph.dijkstra(start_code)
-            end_vertex = graph.vertices[end_code]
-            if end_vertex.distance == float("inf"):
-                print("No path found.")
-            else:
-                path = reconstruct_path(end_vertex)
+            best_path = None
+            min_distance = float("inf")
+
+            for start_code in start_options:
+                graph.dijkstra(start_code)
+                for end_code in end_options:
+                    if end_code in graph.vertices:
+                        v = graph.vertices[end_code]
+                        if v.distance < min_distance:
+                            min_distance = v.distance
+                            best_path = reconstruct_path(v)
+
+            if best_path:
                 print("\nShortest path:" if choice == "1" else "\nFastest path:")
-                print(" → ".join(path))
-                print(f"Total travel time: {end_vertex.distance} minutes")
+                print(" → ".join(best_path))
+                print(f"Total travel time: {min_distance} minutes")
+            else:
+                print("No path found.")
 
         elif choice == "3":
             display_csv("mrt_connections.csv")
