@@ -107,7 +107,7 @@ def main():
         elif choice == "3":
             display_csv("mrt_connections.csv")
         elif choice == "4":
-            display_stations("station_list.csv")
+            display_stations("stations.csv")
         elif choice == "5":
             print("Goodbye!")
             break
